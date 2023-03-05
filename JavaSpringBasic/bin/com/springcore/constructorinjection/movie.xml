@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+ <bean name = "MOVIEDETAILS" class="com.springcore.constructorinjection.MovieDetails">
+ <constructor-arg value="Shahrukh Khan" />
+  <constructor-arg value="Preeti Zinta" />
+   <constructor-arg value="Salman Khan" />
+    <constructor-arg value="Udit Narayan" />
+     <constructor-arg value="08/11/2008" />
+ </bean>
+<bean name ="MovieList" class="com.springcore.constructorinjection.Movie" >
+<constructor-arg value ="Veer Zara"/> 
+ <constructor-arg value ="230000000" />
+  <constructor-arg ref="MOVIEDETAILS" />
+</bean>
+ </beans>

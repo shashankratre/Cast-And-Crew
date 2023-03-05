@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:context = "http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+ <context:annotation-config /> 
+<bean name = "studentdetails" class="com.springcore.autowiring.annotations.autowired.Student">
+<property name="name">
+<list>
+<value>Subham Kumar</value>
+<value>Rajat Singh</value>
+<value>Kuldeep Yadav</value>
+</list>
+</property>
+<property name="subject">
+<map>
+<entry key="205" value="Power Electronics"></entry>
+<entry key="207" value="Power System"></entry>
+<entry key="209" value="Circuit Theory"></entry>
+<entry key="210" value="Electrical Auditing"></entry>
+</map>
+</property>
+
+</bean>
+
+<bean name ="schooldetails" class="com.springcore.autowiring.annotations.autowired.School"> </bean>
+ </beans>

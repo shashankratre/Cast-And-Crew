@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+<bean  name="studentdetails" class="com.springcore.referenceinjection.StudentDetails">
+<property name="stuname" value="Rohan Jain"></property>
+<property name="branch" value="Computer Science"></property>
+<property name="rollno" value="1199956"></property>
+</bean>
+
+<bean name ="universityinformation" class="com.springcore.referenceinjection.University">
+<property name="uniname" value ="Delhi University"></property>
+<property name="collegename" value ="Noida College"></property>
+<property name="registration" value ="25505"></property>
+<property name="sd" >
+<ref bean="studentdetails" />
+</property>
+
+</bean>
+
+ </beans>
