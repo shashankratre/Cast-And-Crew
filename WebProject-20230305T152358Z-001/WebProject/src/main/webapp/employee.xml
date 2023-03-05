@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+<employee>
+<name>Baburao</name>
+<empid>1401</empid>
+<salary>75000</salary>
+</employee>
+
+<employee>
+<name>Shyam</name>
+<empid>1405</empid>
+<salary>60000</salary>
+</employee>
+
+<employee>
+<name>Raju</name>
+<empid>1403</empid>
+<salary>48000</salary>
+</employee>
+
+<employee>
+<name>Manoj</name>
+<empid>1402</empid>
+<salary>55000</salary>
+</employee>
+</employees>

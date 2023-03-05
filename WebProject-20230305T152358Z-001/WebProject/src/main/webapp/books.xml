@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+   <book>
+      <name>The Life Of Ram</name>
+      <author>Ram</author>
+      <price>550</price>
+   </book>
+   
+   <book>
+      <name>India And Indians</name>
+      <author>Shashank</author>
+      <price>1500</price>
+      </book>
+       <book>
+      <name>My Life</name>
+      <author>Raj</author>
+      <price>500</price>
+   </book>
+    <book>
+      <name>Technology</name>
+      <author>Raju</author>
+      <price>100</price>
+   </book>
+  
+</books>

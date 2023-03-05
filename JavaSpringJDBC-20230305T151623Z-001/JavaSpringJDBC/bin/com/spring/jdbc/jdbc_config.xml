@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:context = "http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+<bean name ="ds"          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<!-- all property name must be same as DriverManagerDataSource Class arguments name -->
+
+<property name="driverClassName" value= "net.sourceforge.jtds.jdbc.Driver"></property>
+
+<property name="url" value= "jdbc:jtds:sqlserver://cpas-db-dev1.dev.aws.castandcrew.com;DatabaseName=CapspayTraining;Trusted_Connection=False\"></property>
+
+<property name="username" value= "capspaytraining"></property>
+
+<property name="password" value= "CastandCrew@98"></property>
+
+</bean>
+
+<bean name="jdbctemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+<property name="dataSource">
+<ref bean = "ds"/>
+</property>
+</bean>
+
+<bean name ="daoimplemented" class="com.spring.jdbc.dao.ClubEmployee_DaoImplemented">
+<property name="templ">
+<ref bean ="jdbctemplate" />
+</property>
+</bean>
+ </beans>

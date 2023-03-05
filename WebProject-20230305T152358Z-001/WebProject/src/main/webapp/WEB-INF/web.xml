@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>WebProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+   <servlet-name>Simple_Servlet_Page</servlet-name>
+   <servlet-class>Simple_Servlet_Page</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Simple_Servlet_Page</servlet-name>
+   <url-pattern>/Simple_Servlet_Page</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+   <servlet-name>Form_Page</servlet-name>
+   <servlet-class>Form_Page</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Form_Page</servlet-name>
+   <url-pattern>/Form_Page</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>FormPage_POST_Method</servlet-name>
+   <servlet-class>FormPage_POST_Method</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>FormPage_POST_Method</servlet-name>
+   <url-pattern>/FormPage_POST_Method</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>CheckBox_Page</servlet-name>
+   <servlet-class>CheckBox_Page</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>CheckBox_Page</servlet-name>
+   <url-pattern>/CheckBox_Page</url-pattern>
+</servlet-mapping>
+
+
+<context-param> 
+      <description>Location to store uploaded file</description> 
+      <param-name>file-upload</param-name> 
+      <param-value>
+         C:\Caps\CAPSPay\WebProject\src\main\webapp\Data
+      </param-value> 
+   </context-param>
+<servlet>
+   <servlet-name>File_Upload_Page</servlet-name>
+   <servlet-class>File_Upload_Page</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>File_Upload_Page</servlet-name>
+   <url-pattern>/File_Upload_Page</url-pattern>
+</servlet-mapping>
+
+<filter>
+   <filter-name>Servlet_Filter</filter-name>
+   <filter-class>Servlet_Filter</filter-class>
+   <init-param>
+      <param-name>paramname</param-name>
+      <param-value>FIRST-FILTER</param-value>
+   </init-param>
+</filter>
+
+<filter-mapping>
+   <filter-name>Servlet_Filter</filter-name>
+   <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<servlet>
+   <servlet-name>Sending_Email</servlet-name>
+   <servlet-class>Sending_Email</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>Sending_Email</servlet-name>
+   <url-pattern>/Sending_Email</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>JDBC_Servlet</servlet-name>
+   <servlet-class>JDBC_Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>JDBC_Servlet</servlet-name>
+   <url-pattern>/JDBC_Servlet</url-pattern>
+</servlet-mapping>
+</web-app>
