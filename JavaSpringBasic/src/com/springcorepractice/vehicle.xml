@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+ 
+ <bean name="vehiclelist1" class ="com.springcorepractice.Vehicle" 
+ p:name="Mercedes"
+ p:model ="320"
+ p:price="25000000"
+ />
+  <bean name="vehiclelist2" class ="com.springcorepractice.Vehicle" 
+ p:name="Toyota"
+ p:model ="255"
+ p:price="3000000"
+ />
+ 
+  <bean name="vehiclelist3" class ="com.springcorepractice.Vehicle" 
+ p:name="Maruti"
+ p:model ="200"
+ p:price="190000"
+ />
+  <bean name="vehiclelist4" class ="com.springcorepractice.Vehicle" 
+ p:name="BMW"
+ p:model ="220"
+ p:price="40000000"
+ />
+ 
+  <bean name="vehiclelist5" class ="com.springcorepractice.Vehicle" 
+ p:name="Pulsar"
+ p:model ="150"
+ p:price="95000"
+ />
+  <bean name="vehiclelist6" class ="com.springcorepractice.Vehicle" 
+ p:name="KIA"
+ p:model ="440"
+ p:price="1600000"
+ />
+  <bean name="vehiclelist7" class ="com.springcorepractice.Vehicle" 
+ p:name="Tata"
+ p:model ="560"
+ p:price="800000"
+ />
+  <bean name="vehiclelist8" class ="com.springcorepractice.Vehicle" 
+ p:name="Honda"
+ p:model ="250"
+ p:price="120000"
+ />
+ 
+  <bean name="vehiclelist9" class ="com.springcorepractice.Vehicle" 
+ p:name="Tata"
+ p:model ="600"
+ p:price="750000"
+ />
+  <bean name="vehiclelist10" class ="com.springcorepractice.Vehicle" 
+ p:name="Hundai"
+ p:model ="250"
+ p:price="650000"
+ />
+ </beans>
+ 

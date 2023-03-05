@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+ <bean class="com.springcore.Student" name="Student1" p:name="Rahul" p:roll = "101" p:age="19" />
+  <bean class="com.springcore.Student" name="Student2" p:name="Vibhu Singh" p:roll = "105" p:age="18" />
+  
+   <bean class="com.springcore.Student" name="Student3" p:name="Priya Jain" p:roll = "102" p:age="17" />
+  <bean class="com.springcore.Student" name="Student4" p:name="Monika Das" p:roll = "103" p:age="20" />
+ 
+ </beans>

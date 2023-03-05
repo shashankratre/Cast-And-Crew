@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd"
+ >
+ <bean name="EMPLOYEEDETAILS" class="com.springcore.collections.Employee" p:name ="Virat Kohli">
+ 
+ <property name="city">
+ <list>
+ <value>Delhi</value>
+ <value>Mumbai</value>
+ <value>Raipur</value>
+ <value>Bilaspur</value>
+ </list>
+ </property>
+ 
+ <property name="mobilenumber">
+ <set>
+ <value>8524168712</value>
+ <value>7548963251</value>
+ <value>9632511448</value>
+ <value>9666255583</value>
+ </set>
+ </property>
+ 
+ <property name="experiance">
+ <map>
+ <entry key="JAVA" value ="2" />
+<entry key="SQL" value ="1" />
+ <entry key="SPRING" value ="4" />
+<entry key="JSP" value ="3" />
+ </map>
+ </property>
+ 
+ 
+ </bean>
+ </beans>
